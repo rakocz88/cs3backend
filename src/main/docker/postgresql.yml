@@ -1,0 +1,11 @@
+version: '2'
+services:
+    cs3backend-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/cs3backend/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=cs3backend
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
